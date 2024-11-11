@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(router);
+app.use('/', router);
 
 app.listen(port, () => {
 	console.log(`Server listening on port ${port}`);
